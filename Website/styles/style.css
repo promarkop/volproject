@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:#dbd8d8;
+}
+html,h1,h2,h3,h4,h5,h6,a{
+	font-family:Verdana;
+}
+
+menu{
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.2);
+    padding:0 200px;
+    color: white;
+}
+
+#menub{
+    font-size: large;
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+}
+.nav-link{
+    cursor: pointer;
+    margin: 0 25px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+.newsletter {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    background-color: green;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
