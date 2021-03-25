@@ -33,7 +33,6 @@ menu{
 
 
 
-
 .newsletter {
     padding: 20px;
     background-color: #f1f1f1;
@@ -55,3 +54,26 @@ menu{
   input[type=submit]:hover {
     opacity: 0.8;
   }
+
+
+  #footrib{
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.2);
+    padding:0 200px;
+    color: white;
+    font-size: small;
+}
+
+#to-top span{
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(-135deg);
+  cursor: pointer;
+}
