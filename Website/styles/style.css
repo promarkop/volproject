@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background:#dbd8d8;
+    background-color: #f1f1f1;
 }
 html,h1,h2,h3,h4,h5,h6,a{
 	font-family:Verdana;
@@ -57,7 +57,7 @@ menu{
 
 
   #footrib{
-    height: 7vh;
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,6 +66,8 @@ menu{
     padding:0 200px;
     color: white;
     font-size: small;
+    width:100%;
+    margin-top:auto;
 }
 
 #to-top span{
@@ -77,3 +79,191 @@ menu{
   transform: rotate(-135deg);
   cursor: pointer;
 }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    flex-wrap: wrap;
+    padding: 2 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  
+  .column {
+    max-width: 18%;
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+    float: left;
+  }
+  
+  .column img {
+    /*margin: 20px;*/
+    width: 100%;
+    padding: 15px;
+    display:block;
+    margin:0 auto;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .column {
+      position: relative;
+      width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 50%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .column:hover .image {
+    opacity: 0.3;
+  }
+  
+  .column:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
+
+  .horizontal-scroll-wrapper {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  .horizontal-scroll-wrapper > div {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  .horizontal-scroll-wrapper > div :hover {
+    background-color: #777;
+  }
+
+
+
+
+  .title {
+    color: green;
+  }
+
+  .myButton {
+    box-shadow:inset 0px 1px 0px 0px #caefab;
+    background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+    background-color:#77d42a;
+    border-radius:6px;
+    border:2px solid #268a16;
+    display:inline-block;
+    cursor:pointer;
+    color:#306108;
+    font-family:Arial;
+    font-size:16px;
+    font-weight:bold;
+    padding:10px 40px;
+    text-decoration:none;
+    text-shadow:1px 1px 9px #aade7c;
+  }
+  .myButton:hover {
+    background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+    background-color:#5cb811;
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }
+
+
+
+
+  .joinButton {
+    box-shadow:inset 0px 0px 40px 14px #3dc21b;
+    background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    background-color:#44c767;
+    border-radius:32px;
+    border:3px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:19px;
+    padding:14px 49px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    
+  }
+  .joinButton:hover {
+    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+    background-color:#5cbf2a;
+  }
+  .joinButton:active {
+    position:relative;
+    top:1px;
+  }
+
+  .buttonAlig{
+    display: flex;
+    justify-content: center;
+  }
+  
