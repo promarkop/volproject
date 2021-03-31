@@ -202,12 +202,12 @@ menu{
     background-color: #777;
   }
 
-
-
-
   .title {
     color: green;
   }
+
+  p.detail {color:#306108; text-align:center; font-family:Verdana; font-size: 35px}
+  span.name { color:#77d42a; text-align:center; font-family:Verdana; font-size: 35px}
 
   .myButton {
     box-shadow:inset 0px 1px 0px 0px #caefab;
@@ -266,4 +266,27 @@ menu{
     display: flex;
     justify-content: center;
   }
-  
+
+  .background {
+	position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 786.2px 696px;
+    
+    }
+    
+    .background::before {    
+      content: "";
+      z-index: -1;
+      background-image: url("../images/logo.png");
+      background-position: center;
+      background-size: 786.2px 696px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+  }
+}
